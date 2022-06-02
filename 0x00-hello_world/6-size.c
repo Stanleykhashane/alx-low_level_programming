@@ -1,10 +1,9 @@
 #include <stdio.h>
 
 /**
- *
  *main - Entry point
  *
- *
+ *Description: This programm calculates the size of various pcs
  *
  *Return: Always 0 (Success)
  */
