@@ -12,7 +12,7 @@
 int main(void)
 {
 	{
-		write("_putchar");
+		fwrite("_putchar");
 	}
 	_putchar('\n');
 	return (0);
