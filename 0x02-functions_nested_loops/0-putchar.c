@@ -11,8 +11,13 @@
 
 int main(void)
 {
+	int n = 0;
+	char str_pc[9] = "_putchar";
+
+	while (n < 9)
 	{
-		fwrite("_putchar");
+		_putchar(str_pc[n]);
+		n += 1;
 	}
 	_putchar('\n');
 	return (0);
