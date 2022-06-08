@@ -11,13 +11,13 @@
 
 int main(void)
 {
-	int n = 0;
-	char str_pc[9] = "_putchar";
+	int str[] = {72, 111, 108, 98, 101, 114, 116, 111, 110};
+	int count, sz;
 
-	while (n < 9)
+	sz = sizeof(str) / sizeof(int);
+	for (count = 0; count < sz; count++)
 	{
-		_putchar(str_pc[n]);
-		n += 1;
+		_putchar(str[count]);
 	}
 	_putchar('\n');
 	return (0);
