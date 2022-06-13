@@ -10,18 +10,24 @@
 
 int main(void)
 {
-	int r = 0, c = 0;
-	time_t t;
+char a[100];
+	int r, n, i;
 
-	srand((unsigned int) time(&t));
-	while (c < 2772)
+	n = 0;
+	i = 0;
+	srand(time(NULL));
+	while (n < 2645)
 	{
-		r = rand() % 128;
-		if ((c + r) > 2772)
-			break;
-		c = c + r;
-		printf("%c", r);
+		r = rand() % 122;
+		if (r > 32)
+		{
+			a[i++] = r;
+			n += r;
+		}
 	}
-	printf("%c\n", (2772 - c));
+	a[i++] = (2772 - n);
+	a[i] = '\0';
+	printf("%s", a);
+
 	return (0);
 }
