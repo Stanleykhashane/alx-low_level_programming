@@ -1,22 +1,19 @@
 #include "main.h"
 
 /**
- * _puts - a function that prints a string
- * @str: string input
- * Return: string
+ * _strlen - lenght of string
+ * @s:char
+ * Return:int
  */
-void _puts(char *str)
+int _strlen(char *s)
 {
-	int count = 0;
+	int i = 1, sum = 0;
+	char pl = s[0];
 
-	while (count >= 0)
+	while (pl != '\0')
 	{
-		if (str[count] == '\0')
-		{
-			_putchar('\n');
-			break;
-		}
-		_putchar(str[count]);
-		count++;
+		sum++;
+		pl = s[i++];
 	}
+	return (sum);
 }
